@@ -1,101 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Контакты — Цех ЖБИ</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Цех ЖБИ</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- ШАПКА -->
-  <header>
-    <div class="header-row">
-      <div class="header-left">
-        <img src="images/logo.png" alt="Логотип ЖБИ" class="logo">
-        <div class="header-text">
-          <h1 class="header-title">ЦЕХ ПО ПРОИЗВОДСТВУ И ПРОДАЖЕ ЖБИ</h1>
-          <p class="header-subtitle">20 лет надёжного производства ЖБИ</p>
-        </div>
-      </div>
-      <div class="header-phone">
-        <i class="phone-icon">📞</i>
-        <a href="tel:+79050040488" class="phone-number">8-905-004-04-88</a>
-      </div>
+<header>
+    <div class="container header-wrapper">
+        <nav class="nav">
+            <a href="index.html">О компании</a>
+            <a href="products.html">Каталог</a>
+            <a href="delivery.html">Доставка</a>
+            <a href="contacts.html" class="active">Контакты</a>
+        </nav>
+        <img src="images/logo.png" alt="Логотип" class="logo">
     </div>
+</header>
 
-    <div class="header-row2">
-      <nav class="mainnav">
-        <ul class="mainnav__links">
-          <li><a href="about.html">О компании</a></li>
-          <li><a href="products.html">Каталог</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html" class="active">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<main class="container">
 
-  <!-- КОНТЕНТ -->
-  <main class="container section">
     <h2>Контакты</h2>
 
-    <div class="contacts-grid">
+    <section class="contacts-grid">
 
-      <div class="c-card">
-        <div class="c-icon">📍</div>
-        <h3>Как добраться?</h3>
-        <p>
-          г. Туймазы, республика Башкортостан,<br>
-          ул. Фабричная, 12а, 452757
-        </p>
-      </div>
+        <!-- Левая колонка -->
+        <div class="contacts-block">
 
-      <div class="c-card">
-        <div class="c-icon">✉️</div>
-        <h3>Email</h3>
-        <p>
-          <a href="mailto:info@zbi-example.ru">info@zbi-example.ru</a>
-        </p>
-      </div>
+            <h3>Адрес</h3>
+            <p>г. Туймазы, Республика Башкортостан</p>
+            <p>ул. Фабричная, 12а, 452757</p>
 
-      <div class="c-card">
-        <div class="c-icon">📞</div>
-        <h3>Как связаться?</h3>
-        <p>
-          <a href="tel:+79050040488">8-905-004-04-88</a>
-        </p>
-      </div>
+            <h3>Телефон</h3>
+            <p><a href="tel:+79050040488">8-905-004-04-88</a></p>
 
-      <div class="c-card">
-        <div class="c-icon">🕘</div>
-        <h3>Режим работы</h3>
-        <p>Пн.–Пт.: с 9:00 до 18:00</p>
-      </div>
+            <h3>Email</h3>
+            <p><a href="mailto:info@zbi-example.ru">info@zbi-example.ru</a></p>
 
-  <h3>Карта проезда</h3>
+            <h3>График работы</h3>
+            <p>Пн–Пт: 9:00–18:00</p>
 
-<div class="map-wrapper">
-  <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/20717/tuymazy/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Туймазы</a><a href="https://yandex.ru/maps/20717/tuymazy/?feedback=address%2Fadd&feedback-context=toponym.add_finish&from=mapframe&ll=53.727213%2C54.588008&source=mapframe&um=constructor%3A20717%2Fhouse%2Ffabrichnaya_ulitsa_12a%2FYUoYcQVmSU0GQFtufXl5dnpqbA%3D%3D&utm_medium=mapframe&utm_source=maps&z=17.85" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?feedback=address%2Fadd&feedback-context=toponym.add_finish&from=mapframe&ll=53.727213%2C54.588008&source=mapframe&um=constructor%3A20717%2Fhouse%2Ffabrichnaya_ulitsa_12a%2FYUoYcQVmSU0GQFtufXl5dnpqbA%3D%3D&utm_source=mapframe&z=17.85" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-  <iframe
-    src=""
-    width="100%"
-    height="300"
-    frameborder="0"
-    allowfullscreen="true">
-  </iframe>
-</div>
+            <a class="btn-whatsapp" href="https://wa.me/79050040488" target="_blank" rel="noopener">
+                Написать в WhatsApp
+            </a>
 
+        </div>
 
-    </div>
-  </main>
+        <!-- Правая колонка -->
+        <div class="contacts-map">
 
-  <!-- ПОДВАЛ -->
-  <footer class="footer">
-    <div class="container">© 2025 Цех ЖБИ</div>
-  </footer>
+            <h3>Карта проезда</h3>
+            <p>Цех расположен в промышленной зоне с удобным подъездом.</p>
 
-</body>
-</html>
+            <div class="map-wrapper" style="margin-top: 12px; border-radius: 12px; overflow: hidden;">
+                <!-- РАБОЧИЙ ВИДЖЕТ КАРТЫ -->
+                <iframe
+                    src="https://api-maps.yandex.ru/frame/v1/-/CLGyuM6b"
+                    width="100%"
+                    height="300"
+                    frameborder="0"
+                    allowfullscreen="true">
+                </iframe>
+            </div>
 
+            <p class="map-note" style="margin-top: 8px; color: #66
 

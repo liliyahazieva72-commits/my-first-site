@@ -65,15 +65,26 @@
       <p>Цех находится в промышленной зоне, удобный подъезд для грузового транспорта.</p>
 
       <!-- Вставь сюда свою карту (Яндекс / Google). Пример с Яндекс.Картами: -->
-      <div class="map-wrapper">
-  <iframe
-    src="https://api-maps.yandex.ru/frame/v1/-/CLGyuM6b"
-    width="100%"
-    height="300"
-    frameborder="0"
-    allowfullscreen="true">
-  </iframe>
-</div>
+      <div id="map" style="width: 100%; height: 400px; margin-top: 20px;"></div>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=26b70163-a7fe-4379-9087-1335bf23436b&lang=ru_RU"></script>
+<script>
+    ymaps.ready(function () {
+        var map = new ymaps.Map("map", {
+            center: [54.587698, 53.726081], 
+            zoom: 17
+        });
+
+        var placemark = new ymaps.Placemark([54.587698, 53.726081], {
+            balloonContent: '<strong>Цех по производству ЖБИ</strong><br>Туймазы'
+        }, {
+            preset: 'islands#redIcon'
+        });
+
+        map.geoObjects.add(placemark);
+    });
+</script>
+
 
 
       <p class="map-note">
@@ -90,3 +101,4 @@
 
 </body>
 </html>
+

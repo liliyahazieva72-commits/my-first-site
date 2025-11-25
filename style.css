@@ -772,3 +772,34 @@ footer {
     flex-direction: column;
   }
 }
+/* увеличенный логотип */
+.header-logo {
+  width: 150px;    /* можешь увеличить до 170 или 180, если нужно */
+  height: auto;
+}
+
+/* все тексты в шапке — жирнее */
+.site-header {
+  font-weight: 600;
+}
+
+/* кроме названия "ЦЕХ ЖБИ" */
+.company-name {
+  font-weight: 400;
+  font-size: 26px;
+}
+
+/* расположение Надёжность / Качество / Ответственность столбиком */
+.header-values {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+/* оранжевая линия меню сверху и снизу */
+.mainnav {
+  border-top: 3px solid #f47c20;
+  border-bottom: 3px solid #f47c20;
+}
+
